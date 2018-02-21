@@ -1,16 +1,18 @@
 package smallbluewhale.controller;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Created by 铠联 on 2018/2/21.
  */
-@RestController
+@Controller
 public class HelloController {
 
-    @RequestMapping("/hello")
+    @RequestMapping(value = "/index")
     public String hello() {
-        return "hello,this is a springboot demo";
+        return "index";
     }
 }

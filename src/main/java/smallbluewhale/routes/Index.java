@@ -13,4 +13,15 @@ public class Index {
     public String index() {
         return "index";
     }
+
+    @RequestMapping(value = "/browse")
+    public String browse() {
+        return "browse";
+    }
+
+    @RequestMapping(value = "/edit")
+    public String edit() {
+        return "edit";
+    }
+
 }
